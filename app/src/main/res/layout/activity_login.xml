@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="50dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TableRow
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/username"
+                        android:textSize="20dp"/>
+            </TableRow>
+
+            <TableRow
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <EditText
+                        android:id="@+id/username"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"/>
+            </TableRow>
+
+            <TableRow
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/password"
+                        android:textSize="20dp"/>
+            </TableRow>
+
+            <TableRow
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <EditText
+                        android:id="@+id/password"
+                        android:textColor="@color/black"
+                        android:layout_width="312dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPassword"/>
+            </TableRow>
+
+            <TableRow
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="20dp"
+                    android:visibility="visible"
+                    tools:visibility="visible">
+
+                <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/login"
+                        android:layout_width="100dp"
+                        android:layout_height="59dp"
+                        android:background="@drawable/button"
+                        android:textColor="@color/white"
+                        android:text="S'identifier"/>
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
